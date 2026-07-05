@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="WASSettings" load_steps=2 format=4]
+
+[ext_resource type="Script" path="res://LM_mods/WeaponAttachmentSpawner/Settings.gd" id="1"]
+
+[resource]
+script = ExtResource("1")

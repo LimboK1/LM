@@ -1,0 +1,22 @@
+[mod]
+
+name="Loot Modifier"
+id="loot-modifier"
+version="2.2.0"
+
+[autoload]
+
+LootModifierConfig="res://LM_mods/LootModifier/Config.gd"
+LootModifier="res://LM_mods/LootModifier/Main.gd"
+
+LM_WASConfig="res://LM_mods/WeaponAttachmentSpawner/ModConfig.gd"
+LM_WASMain="res://LM_mods/WeaponAttachmentSpawner/Main.gd"
+
+[hooks]
+
+"res://Scripts/LootContainer.gd" = "GenerateLoot, CreateLoot"
+"res://Scripts/LootSimulation.gd" = "GenerateLoot, SpawnItems"
+
+[updates]
+
+modworkshop=56036
