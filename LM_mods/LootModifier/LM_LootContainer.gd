@@ -9,11 +9,11 @@ func on_ready():
 
 	if container.stash:
 
-		process_mode = ProcessMode.PROCESS_MODE_DISABLED
+		container.process_mode = ProcessMode.PROCESS_MODE_DISABLED
 		container.hide()
 
-		if randi_range(0, 100) > lootSettings.special_crate_chance:
-			process_mode = ProcessMode.PROCESS_MODE_ALWAYS
+		if randi_range(0, 100) <= lootSettings.special_crate_chance:
+			container.process_mode = ProcessMode.PROCESS_MODE_ALWAYS
 			container.show()
 
 func on_container_generateloot():

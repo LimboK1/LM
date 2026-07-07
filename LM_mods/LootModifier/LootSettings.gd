@@ -16,6 +16,7 @@ var joker_chance: int = 1
 # Chance of a joker spawning a legendary item
 var joker_legendary_item_chance: float = 0.10
 
+# Chance of a special crate appearing
 var special_crate_chance: int = 10
 
 # AI weapon spawn condition
